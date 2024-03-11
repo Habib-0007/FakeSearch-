@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/index.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Google Sans"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
+		<script
+			type="text/javascript"
+			src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"
+		></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.7/download.min.js"></script>
+		<title>FakeSearch</title>
+	</head>
+	<body style="font-family: &quot;Sora&quot;, sans-serif">
+		<header class="header">
+			<h1>FakeSearch</h1>
+		</header>
+		<article tyle='font-family: "Sora", sans-serif'>
+			<p
+				>*Caveat Emptor: You are responsible for any information you
+				share with this, make sure you don't post controversial
+				statements</p
+			>
+		</article>
+		<form>
+			<input
+				type="text"
+				name="question"
+				id="question"
+				placeholder="Question"
+				required
+			/>
+			<input
+				type="text"
+				name="answer"
+				id="answer"
+				placeholder="Answer"
+				required
+			/>
+			<input
+				type="text"
+				name="searchSuggest1"
+				id="searchSuggest1"
+				placeholder="Search Suggestion 1"
+				required
+			/>
+			<input
+				type="text"
+				name="searchSuggest2"
+				id="searchSuggest2"
+				placeholder="Search Suggestion 2"
+				required
+			/>
+			<input
+				type="text"
+				name="searchSuggest3"
+				id="searchSuggest3"
+				placeholder="Search Suggestion 3"
+				required
+			/>
+			<button>Update</button>
+		</form>
+		<section class="canvas">
+			<section class="phone-details">
+				<p class="time"></p>
+				<div>
+					<p class="network">
+						<sup></sup>
+						<i class="fa fa-signal"> </i>
+					</p>
+					<i class="fa battery"></i>
+					<p class="battery-percent"></p>
+				</div>
+			</section>
+			<header class="canvas-header">
+				<div></div>
+				<h1>
+					<span style="color:">G</span>
+					<span style="color:">o</span>
+					<span style="color:">o</span>
+					<span style="color:">g</span>
+					<span style="color:">l</span>
+					<span style="color:">e</span>
+				</h1>
+				<div class="me"> H </div>
+			</header>
+			<section class="searchBox">
+				<img
+					src="./assets/search.svg"
+					alt="searchIcon"
+				/>
+				<p class="searchCont"
+					>Who created the fastest computer system?</p
+				>
+				<img
+					src="./assets/microphone.svg"
+					alt="microphone"
+				/>
+				<img
+					src="./assets/lens.svg"
+					alt="lens"
+				/>
+			</section>
+			<section class="rdr">
+				<div>News</div>
+				<div>Images</div>
+				<div>Videos</div>
+				<div>Maps</div>
+			</section>
+			<hr />
+			<section class="search-res">
+				<p>
+					Who created the fastest computer system? Philip Emeagwali is
+					often credited as the creator of the fatest computer
+				</p>
+			</section>
+			<section class="sug">
+				<div class="sug-head">
+					<h3>People also ask</h3>
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<hr />
+				<div class="sug-body">
+					<div class="sug-body-1">
+						<p>Who is Philip Emeagwali?</p>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<hr />
+					<div class="sug-body-2">
+						<p> Is Philip Emeagwali a Nigerian? </p>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<hr />
+					<div class="sug-body-3">
+						<p> Where does Philip Emeagwali hail from? </p>
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<hr />
+				</div>
+			</section>
+		</section>
+		<button class="download">Download</button>
+		<script src="js/index.js"></script>
+	</body>
+</html>

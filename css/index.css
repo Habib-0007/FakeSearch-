@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora");
+
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+:root {
+	--red: #ea4335;
+	--blue: #4285f4;
+	--green: #34a853;
+	--yellow: #fbbc05;
+}
+
+body {
+	padding-bottom: 20px;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px 12px;
+}
+
+article {
+	padding: 12px;
+}
+
+article p {
+	font-size: 20px;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 12px;
+	padding: 12px;
+	margin-top: 30px;
+}
+
+form input {
+	display: block;
+	border: 2px solid #000;
+	padding: 10px 12px 32px;
+	font-size: 20px;
+	width: 100%;
+	font-family: "Sora", sans-serif;
+}
+
+form button {
+	display: block;
+	background: var(--blue);
+	color: #fff;
+	padding: 12px 20px;
+	font-size: 18px;
+	margin: 0 auto;
+	border-radius: 8px;
+	font-family: "Sora", sans-serif;
+}
+
+section.canvas {
+	display: block;
+	width: 90%;
+	max-width: 480px;
+	margin: 20px auto;
+	border-radius: 20px;
+	box-shadow: 2px 2px 5px #000;
+	font-family: "Google Sans", sans-serif;
+	padding-block: 0 20px;
+}
+
+.phone-details {
+	padding: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #000;
+	color: #fff;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.phone-details div {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	text-align: center;
+	gap: 2px;
+}
+
+.phone-details div .battery {
+	transform: rotate(270deg);
+}
+
+.phone-details .network {
+	position: relative;
+}
+
+.phone-details sup {
+	font-size: 8px;
+	position: absolute;
+	left: -6px;
+	text-transform: uppercase;
+}
+
+.canvas-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding: 20px 12px 32px;
+}
+
+.canvas-header h1 {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 1px;
+	font-size: 24px;
+}
+
+.canvas-header h1 span:nth-child(1) {
+	color: var(--blue);
+}
+.canvas-header h1 span:nth-child(2) {
+	color: var(--red);
+}
+.canvas-header h1 span:nth-child(3) {
+	color: var(--yellow);
+}
+.canvas-header h1 span:nth-child(4) {
+	color: var(--blue);
+}
+.canvas-header h1 span:nth-child(5) {
+	color: var(--green);
+}
+.canvas-header h1 span:nth-child(6) {
+	color: var(--red);
+}
+
+.canvas .me {
+	background: var(--red);
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.searchBox {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 12px;
+	margin: 0 auto;
+	padding: 8px 12px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 5px #000;
+}
+
+.searchBox .searchCont {
+	width: 100%;
+	overflow-x: scroll;
+}
+
+.searchBox img {
+	width: 24px;
+}
+
+.rdr {
+	padding: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	gap: 12px;
+	overflow-x: scroll;
+}
+
+.rdr div {
+	border: 1.5px solid #000;
+	border-radius: 20px;
+	padding: 12px;
+}
+
+.canvas hr {
+	height: 2px;
+	width: calc(100% - 24px);
+	background: lightgrey;
+	display: block;
+	margin-inline: auto;
+}
+
+.search-res {
+	font-weight: bold;
+	padding: 6px 12px;
+	margin-top: 8px;
+}
+
+.search-res p {
+	font-size: 18px;
+}
+
+.sug {
+	padding: 12px;
+}
+
+.sug-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding: 8px 0;
+}
+
+.sug hr {
+	height: 2px;
+	width: 100%;
+	background: lightgrey;
+	display: block;
+	margin-inline: auto;
+}
+
+.sug-body div {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	text-align: left;
+	gap: 12px;
+	padding: 12px 6px;
+}
+
+.sug-body div p {
+	font-weight: 500;
+	font-size: 18px;
+}
+
+button.download {
+	display: block;
+	background: var(--red);
+	color: #fff;
+	padding: 12px 20px;
+	font-size: 18px;
+	margin: 0 auto;
+	border-radius: 8px;
+	font-family: "Sora", sans-serif;
+}
