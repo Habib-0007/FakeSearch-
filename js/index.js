@@ -2,6 +2,12 @@ var form = document.querySelector("form");
 var phoneDetails = document.querySelector(".phone-details");
 var canvas = document.querySelector(".canvas");
 
+if (window.innerWidth >= 540) {
+	canvas.style.maxWidth = `480px`;
+} else {
+	canvas.style.maxWidth = `${window.innerWidth}px`;
+}
+
 var time = phoneDetails.querySelector(".time");
 var batteryPercent = phoneDetails.querySelector(".battery-percent");
 var batteryBar = phoneDetails.querySelector(".battery");
@@ -65,7 +71,7 @@ var downloadBtn = document.querySelector(".download");
 
 downloadBtn.addEventListener("click", function () {
 	html2canvas(canvas).then(canv => {
-		simulateDownloadImageClick(canv.toDataURL(), 'file-name.png');
+		simulateDownloadImageClick(canv.toDataURL(), "file-name.png");
 	});
 });
 
