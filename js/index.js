@@ -64,9 +64,29 @@ updateBtn.addEventListener("click", event => {
 var downloadBtn = document.querySelector(".download");
 
 downloadBtn.addEventListener("click", function () {
-	html2canvas(canvas).then(function (canv) {
-		const dataURL = canv.toDataURL("image/png");
-		console.log(dataURL)
-		downloadjs(dataURL, "myImage.png", "image/png");
+	html2canvas(canvas).then(canv => {
+		simulateDownloadImageClick(canv.toDataURL(), 'file-name.png');
 	});
 });
+
+function simulateDownloadImageClick(uri, filename) {
+	var link = document.createElement("a");
+	if (typeof link.download !== "string") {
+		window.open(uri);
+	} else {
+		link.href = uri;
+		link.download = filename;
+		accountForFirefox(clickLink, link);
+	}
+}
+
+function clickLink(link) {
+	link.click();
+}
+
+function accountForFirefox(click) {
+	let link = arguments[1];
+	document.body.appendChild(link);
+	click(link);
+	document.body.removeChild(link);
+}
