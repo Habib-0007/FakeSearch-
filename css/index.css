@@ -6,6 +6,7 @@
 	border: none;
 	outline: none;
 	box-sizing: border-box;
+	font-family: "Sora", sans-serif;
 }
 
 :root {
@@ -73,7 +74,6 @@ section.canvas {
 	margin: 20px auto;
 	border-radius: 0px;
 	box-shadow: 2px 2px 5px #000;
-	font-family: "Google Sans", sans-serif;
 	padding-block: 0 20px;
 }
 
@@ -155,6 +155,7 @@ section.canvas {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-weight: bold;
 }
 
 .searchBox {
@@ -215,6 +216,7 @@ section.canvas {
 
 .search-res p {
 	font-size: 18px;
+	line-height: 1.5;
 }
 
 .sug {
@@ -260,4 +262,34 @@ button.download {
 	margin: 0 auto;
 	border-radius: 8px;
 	font-family: "Sora", sans-serif;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	padding: 16px;
+}
+
+.square {
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+	border: 2px solid lightgrey;
+}
+
+.circle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid lightgrey;
+}
+
+.open-square {
+	width: 20px;
+	height: 20px;
+	border: 2px solid lightgrey;
+	border-left: none;
+	border-radius: 0px 6px 6px 0px;
 }
