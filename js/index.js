@@ -24,7 +24,7 @@ function getCurrentTime() {
 
 navigator.getBattery().then(battery => {
 	var batteryPercentage = battery.level * 100;
-	batteryPercent.textContent = `${batteryPercentage}%`;
+	batteryPercent.textContent = `${Math.round(batteryPercentage)}%`;
 
 	if (batteryPercentage >= 75) {
 		batteryBar.classList.add("fa-battery-full");
